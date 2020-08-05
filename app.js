@@ -113,7 +113,7 @@ var appController = (function (uiController, fnController) {
   var ctrlAddItem = function () {
     // 1.оруулах өгөгдөлийг олж авна
     var input = uiController.getInput();
-    if (input.description !== "" && input.value !== "") {
+    if (input.description !== "" && input.value > 0) {
       // 2.олж авсан өгөгдөлөө санхүүгийн контролд хадгална
       var item = finaceController.addItem(
         input.type,
